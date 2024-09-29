@@ -1,0 +1,879 @@
+/* общие сведения */
+body {
+  background-image: url('../images/background1.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+@property --c {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: white;
+}
+
+@property --b {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: white;
+}
+
+
+/* главная страница index */
+
+
+/* контейнер с контуром */
+.firstpage1blok {
+  width: 93vw;
+  height: 93vh;
+  margin: auto auto;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 0.19vw solid rgb(255, 255, 255);
+  border-radius: 2vw;
+  position: absolute;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* верхняя часть */
+.uppart1 {
+  position: absolute;
+  width: 100%;
+  top: 2vw;
+}
+
+.mainmenu > .small1 {
+  left: 2vw;
+  top: 2vw;
+}
+
+.downpartmenu > .small1 {
+  position: static;
+}
+.small1 {
+  font-family: 'Mont';
+  color: white;
+  font-size: 1vw;
+  font-weight: 600;
+  position: relative;
+  line-height: 90%;
+}
+
+.uppart1 > .small1 {
+  left: 2vw;
+}
+.gbrand1 {
+  font-family: 'Mont';
+  color: white;
+  font-size: 2.5vw;
+  font-weight: 600;
+  line-height: 90%;
+  text-align: center;
+  z-index: 5;
+}
+.button1 {
+  background-image: url('../images/menu.svg');
+  width: 4vw;
+  height: 4vw;
+  right: 6vw;
+  position: fixed;
+  top: calc(3vh + 2vw);
+  z-index: 5;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+h3 > a {
+  width: 100%;
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+}
+
+/* главный заголовок */
+.main1 {
+  text-align: center;
+  font-family: 'Mont';
+  color: white;
+  font-size: 7vw;
+  font-weight: 600;
+  letter-spacing: -5px;
+  line-height: 79%;
+  padding-top: 25vh;
+  padding-bottom: 20vh;
+}
+
+/* нижняя часть */
+.downpart1 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  bottom: 2vw;
+  padding: 0 2vw;
+  position: absolute;
+}
+.pointpart1 {
+  align-items: flex-start;
+  display: flex;
+  width: 40%;
+}
+.normal1 {
+  font-family: 'Mont';
+  color: white;
+  font-size: 2.5vw;
+  font-weight: 600;
+  padding-top: 5vw;
+}
+.image1 {
+  width: 4vw;
+  height: 4vw;
+}
+.image1:hover {
+  rotate: -90deg;
+  transition: 0.25s;
+}
+
+/* общее выходящее меню */
+.mainmenu {
+  display: none;
+  width: 93vw;
+  height: 93vh;
+  position: fixed;
+  box-sizing: border-box;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto auto;
+
+  border: 0.15vw solid rgb(255, 255, 255);
+  border-radius: 3vw;
+  backdrop-filter: blur(20px);
+  z-index: 4;
+}
+h3 {
+  font-family: 'Mont';
+  color: white;
+  font-size: 2.4vw;
+  font-weight: 600;
+  text-align: center;
+}
+.centerclick {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+.downpartmenu {
+  display: flex;
+  margin: -3vh 0 0 0;
+  justify-content: space-between;
+  padding: 2vw 2vw;
+  position: absolute;
+  width: 100%;
+  bottom: 0vw;
+  box-sizing: border-box;
+}
+.small1:nth-of-type(2) {
+  text-align: right;
+}
+
+.letterMain {
+  background-image: url('../images/background1.2.png');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -2;
+  width: 45%;
+  height: 100%;
+  animation: animationSwipe 1s ease-in-out forwards;
+}
+
+.container2 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  background: linear-gradient(#8c969f, #adb2b8);
+  overflow: hidden;
+}
+
+.leftimg1 {
+  width: 50vw;
+  height: 33.75vw;
+  position: absolute;
+  animation: animationSwipeX 6s ease-in-out forwards;
+  animation-delay: -4.5s;
+}
+.rightimg1 {
+  position: absolute;
+  width: 50vw;
+  height: 45.2vw;
+  right: 0;
+  bottom: 15vh;
+  animation: animationSwipeXP 6s ease-in-out forwards;
+  animation-delay: -4.5s;
+}
+
+/* верхняя плашка и заголовок*/
+.dop2 {
+  width: 35vw;
+  background-color: white;
+  z-index: 1;
+  position: absolute;
+  top: calc(3vh + 2vw);
+  left: 6vw;
+  border-radius: 2vw;
+  padding: 2.5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: animationSwipeX 1s ease-in-out forwards;
+}
+.inverseButton {
+  background-image: url('../images/menu.svg');
+}
+
+p {
+  font-family: 'Mont';
+}
+.textup2 {
+  width: 27vw;
+  font-family: 'Mont';
+  color: #8b949e;
+  font-size: 2.3vw;
+  font-weight: 600;
+}
+.gletter2 {
+  width: 6vw;
+  height: 6vw;
+}
+
+/* нижняя часть */
+.downpart2 {
+  width: 92vw;
+  z-index: 2;
+  position: absolute;
+  bottom: 4vh;
+  box-sizing: border-box;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  padding: 2vw;
+}
+
+.downpart2::after {
+  background-color: rgba(220, 220, 220, 0.2);
+  border-radius: 3vw;
+  backdrop-filter: blur(20px);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  animation: animationSwipe 1s ease-in-out forwards;
+
+  position: absolute;
+  z-index: -1;
+  content: '';
+}
+
+.downpart2::before {
+  width: 100%;
+  font-family: 'Mont';
+  font-size: 20vw;
+  top: -14vw;
+  color: white;
+  position: absolute;
+  text-align: center;
+  z-index: -5;
+  content: 'Миссия';
+}
+
+.concept2 {
+  text-align: center;
+  font-family: 'Mont';
+  color: white;
+  font-size: 5.5vw;
+  font-weight: 600;
+  letter-spacing: -0.3vh;
+  line-height: 79%;
+}
+.textdown2 {
+  font-family: 'Mont';
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  font-size: 2.3vw;
+  line-height: 79%;
+  padding-top: 6vh;
+}
+.centerdown2 {
+  display: flex;
+  padding-top: 2.6vh;
+  justify-content: space-between;
+  left: 2vw;
+  right: 2vw;
+}
+.small2 {
+  font-family: 'Mont';
+  color: white;
+  font-size: 1vw;
+  font-weight: 600;
+  line-height: 90%;
+}
+.smallright2 {
+  font-family: 'Mont';
+  color: white;
+  text-align: right;
+  font-size: 1vw;
+  font-weight: 600;
+  line-height: 90%;
+}
+
+.portfolioSection {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(#989ea4, #938d7e);
+}
+
+.portfolioSection {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(#989ea4, #938d7e);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2vw;
+  padding: 3vh 3vw;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.webPosters,
+.webDesign,
+.bentoDesign,
+.advertisement,
+.designSystem {
+  background-color: white;
+  border-radius: 3vw;
+  position: relative;
+  padding-bottom: 2vw;
+}
+.bentoDesign {
+  grid-row: span 2;
+}
+.webPosters,
+.webDesign {
+  grid-column: 1;
+}
+.webPosters {
+  grid-row: 1;
+}
+.webDesign {
+  grid-row: 2;
+}
+
+.subTitlePorfolio {
+  font-family: 'Mont';
+  color: #8b949e;
+  font-size: 5vw;
+  z-index: 0;
+  font-weight: 600;
+  letter-spacing: -0.2vw;
+  line-height: 79%;
+  position: absolute;
+  margin-left: 2vw;
+  animation: animationSwipe 1s ease-in-out forwards;
+  bottom: 10px;
+}
+
+.centerclick.inverse > * > *,
+.small1.inverse {
+  color: #8b949e;
+}
+.activeHypenlink:before {
+  position: absolute;
+  content: '';
+  background-color: white;
+  border-radius: 3vw;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  animation: scale linear forwards 1s;
+}
+
+.upstyle {
+  width: 94%;
+  height: 40%;
+  position: relative;
+  display: flex;
+}
+
+/* види услуг */
+
+.servicesGradient {
+  --c: rgb(161, 153, 131);
+  --b: rgb(209, 207, 200);
+  background: linear-gradient(var(--c), var(--b));
+  width: 100vw;
+  height: 100vh;
+  padding: 3vh 3vw;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: -5;
+  transition: --b 3s, --c 0.5s ease-in-out;
+}
+
+.descriptionButtonDesign {
+  position: absolute;
+  bottom: 3vh;
+  left: 3vw;
+  padding: 3vw;
+  box-sizing: border-box;
+  z-index: -5;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 2vw;
+  font-family: 'Mont';
+  font-weight: 400;
+  color: white;
+  position: absolute;
+  font-size: 2vw;
+  width: 42%;
+  line-height: 79%;
+}
+.pointpart1.service {
+  position: absolute;
+  right: 3vw;
+  bottom: 4vh;
+  z-index: -5;
+}
+
+.pointpart1.service > .normal1 {
+  font-weight: 400;
+  font-size: 2vw;
+}
+
+.upstyle > .leftup {
+  display: flex;
+  gap: 2vw;
+  flex-direction: column;
+  margin-top: 2vw;
+}
+.serviceButton > h1 {
+  font-family: 'Mont';
+  color: #ffffff;
+  font-size: 6vw;
+  font-weight: 600;
+  letter-spacing: -0.5vw;
+  line-height: 79%;
+}
+
+/* нижняя часть */
+.downstyle {
+  width: 94%;
+  height: 15%;
+  position: absolute;
+  bottom: 6vh;
+  display: flex;
+}
+.downstyle > p {
+  width: 50%;
+  font-family: 'Mont';
+  font-weight: 600;
+  color: white;
+  position: absolute;
+  font-size: 2vw;
+  line-height: 79%;
+  bottom: 0;
+}
+
+.serviceButton > .listOpportClicked {
+  background-color: #8b949e;
+}
+.rightdown {
+  right: 0;
+}
+.serviceButton > div {
+  width: 4vw;
+  margin-bottom: unset;
+  height: 4vw;
+  mask-image: url('../images/pointer.png');
+  mask-size: contain;
+  background-color: white;
+  mask-position: center;
+  mask-repeat: no-repeat;
+}
+.serviceButton {
+  padding: 2vw;
+  justify-content: space-between;
+  animation: animationSwipe 1s ease-in-out forwards;
+  display: flex;
+  align-items: center;
+  width: 40vw;
+  border-radius: 2vw;
+}
+.gBrand {
+  left: 2vw;
+}
+.designTypo {
+  width: 80vw;
+  height: 34vw;
+  position: absolute;
+  background-image: url('../images/g.brand.png');
+  background-repeat: no-repeat;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -10;
+  margin: auto auto;
+  background-position: center;
+  background-size: contain;
+}
+/**/
+
+.workBackground {
+  width: 100vw;
+  height: 100vh;
+  background-color: #d1cfc8;
+}
+
+.gbrandTop {
+  font-family: 'Mont';
+  color: white;
+  font-size: 2.3vw;
+  line-height: 79%;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 3vh;
+  margin-bottom: 2vh;
+}
+
+/* основная часть */
+.main {
+  width: 100%;
+  height: 90vh;
+  bottom: 0;
+  /* background: linear-gradient(#A7B0B8, #58616A); */
+  background: linear-gradient(rgb(167, 176, 184), rgb(88, 97, 106));
+  background-position: 0;
+  border-radius: 3vw 3vw 0 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+/* верхняя часть */
+.up {
+  display: flex;
+  padding: 5vh 0 0 6vw;
+  z-index: 1;
+  position: relative;
+}
+img {
+  width: 5vw;
+  height: 5vw;
+}
+p {
+  font-weight: 600;
+  color: white;
+  font-size: 2.3vw;
+  line-height: 79%;
+}
+.textup {
+  width: 50%;
+}
+.bmenu {
+  width: 80px;
+  height: 80px;
+  padding-left: 40vw;
+  padding-top: 2vh;
+  z-index: 5;
+}
+.button1.work {
+  top: 14vh;
+}
+
+/* нижняя часть */
+.downCards {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 96%;
+  left: 0;
+  right: 0;
+  bottom: 3vh;
+  margin: 0 auto;
+}
+
+/* левый бокс */
+.box {
+  animation: animationSwipe 1s ease-in-out forwards;
+  width: 30%;
+  aspect-ratio: 1;
+  background-color: rgba(220, 220, 220, 0.2);
+  border-radius: 3vw;
+  backdrop-filter: blur(20px);
+  position: relative;
+  padding: 2.5vw;
+  box-sizing: border-box;
+}
+.inside > h1 {
+  font-family: 'Mont';
+  color: white;
+  font-size: 5.5vw;
+  font-weight: 600;
+  letter-spacing: -0.3vh;
+  line-height: 79%;
+  bottom: 2vw;
+  position: absolute;
+  animation: animationSwipeX 2s ease-in-out forwards;
+  animation-delay: -1s;
+}
+
+.box > h2 {
+  font-family: 'Mont';
+  color: white;
+  font-size: 2vw;
+  font-weight: 400;
+  display: none;
+}
+
+/* внешняя сторона карточки */
+.inside {
+  margin: auto auto;
+  display: flex;
+}
+
+.click {
+  position: absolute;
+  right: 2vw;
+  animation: animationSwipe 1s ease-in-out forwards;
+}
+.abstractFigure {
+  position: absolute;
+  background-image: url('../images/metal3.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  animation: animationSwipe 6s ease-in-out forwards;
+  animation-delay: -4s;
+  width: 70vw;
+  right: -10%;
+  bottom: -25%;
+  aspect-ratio: 1;
+}
+.box > .displayBox {
+  display: block;
+}
+.displayNone {
+  display: none;
+}
+
+.small1.work {
+  top: 6vw;
+}
+/**/
+
+.scrollContacts {
+  background: linear-gradient(#c7c3b9, #b8cce0);
+}
+.formTitle > .center > p {
+  font-family: 'Mont';
+  font-weight: 600;
+  color: white;
+  font-size: 2.5vw;
+  line-height: 79%;
+}
+.socialMedia {
+  display: flex;
+  gap: 2vw;
+  align-items: center;
+}
+.gbrand {
+  text-align: center;
+  margin-top: 5vh;
+}
+.formTitle {
+  width: 100vw;
+  margin: 0 auto;
+  margin-top: -2vh;
+}
+.formTitle > .small1 {
+  position: absolute;
+  left: calc(3vw + 3vw);
+  top: calc(3vh + 2vw);
+}
+.formTitle > h2 {
+  font-family: 'Mont';
+  color: white;
+  font-size: 1vw;
+  font-weight: 600;
+  line-height: 90%;
+}
+.formTitle > .center > h1 {
+  font-family: 'Mont';
+  color: white;
+  font-size: 7vw;
+  font-weight: 600;
+  letter-spacing: -0.2vw;
+  line-height: 79%;
+}
+.center {
+  animation: animationSwipe 1s ease-in-out forwards;
+  margin-top: 15vh;
+  margin-left: 10vw;
+}
+
+form {
+  width: 40vw;
+  margin: 5vw 0 5vw 46vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2vw;
+}
+input {
+  width: 40vw;
+  background-color: rgba(1, 1, 1, 0);
+  margin-top: 2vh;
+  border: 4px white;
+  border-style: hidden hidden solid hidden;
+  font-family: 'Mont';
+  color: white;
+  font-size: 2.5vw;
+  font-weight: 600;
+}
+::placeholder {
+  color: white;
+}
+input:focus {
+  outline: none;
+}
+.submitButton {
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  border: none;
+  margin-top: 2vh;
+  border-radius: 1vw;
+  gap: 2vw;
+  position: relative;
+  padding: 1vh 2vw;
+  display: flex;
+  align-items: center;
+}
+.sendi {
+  width: 3vw;
+  height: 3vw;
+}
+.firstscreen {
+  height: 100vh;
+}
+.secondscreen {
+  width: 100vw;
+  position: relative;
+}
+
+.makeITpng {
+  width: 100%;
+  aspect-ratio: 3.5;
+  background-image: url('../images/makeitLetters.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+footer {
+  align-items: center;
+  width: 95vw;
+  height: 7vh;
+  border: 0.25vw solid white;
+  border-radius: 3vw;
+  margin: 0vh 2vw 5vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 4vw;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.social {
+  width: 5vw;
+  height: 5vw;
+}
+a {
+  padding: 3vh 0;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.buttond {
+  width: 7vw;
+  height: 7vw;
+}
+
+.centerdown {
+  display: flex;
+  justify-content: space-between;
+  padding: calc(3vh + 3vw) calc(3vw + 3vw);
+  width: 100vw;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+}
+.small {
+  font-family: 'Mont';
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 90%;
+  margin-top: 8vh;
+}
+
+.smallright {
+  font-family: 'Mont';
+  color: white;
+  text-align: right;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 90%;
+  margin-top: 8vh;
+}
+
+.leadThankYou {
+  font-family: 'Mont';
+  letter-spacing: -0.3vw;
+  color: white;
+  font-size: 5vw;
+  text-align: center;
+  width: 90%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  margin: auto auto;
+}
+
+.menu > a {
+  width: 100%;
+  height: 100%;
+}

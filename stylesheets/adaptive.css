@@ -1,0 +1,441 @@
+@media all and (min-width: 1224px) {
+  .abstractFigure {
+    bottom: -30%;
+  }
+  .downpart2::after,
+  .descriptionButtonDesign,
+  .box,
+  .mainmenu {
+    backdrop-filter: blur(60px);
+  }
+}
+
+@media all and (min-width: 933px) and (max-device-width: 1223px) {
+  .abstractFigure {
+    bottom: 0%;
+  }
+}
+
+@media all and (min-device-width: 480px) and (max-device-width: 1024px) {
+  .letterMain {
+    width: 80%;
+  }
+  .downpart2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@media all and (max-device-width: 933px) {
+  .serviceButton {
+    width: 90vw;
+  }
+  .serviceButton > h1 {
+    font-size: 9vw;
+  }
+  .downstyle > .gBrand {
+    bottom: 2vh;
+  }
+  .box {
+    width: 100%;
+    aspect-ratio: unset;
+    height: 20vh;
+  }
+  .downCards {
+    flex-direction: column;
+    gap: 2vh;
+  }
+  .abstractFigure {
+    height: 120vh;
+    width: 100vw;
+  }
+}
+
+@media all and (min-device-width: 480px) and (max-device-width: 933px) {
+  .downstyle > p {
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    bottom: 20vh;
+    font-size: 3vw;
+  }
+  .box > h2 {
+    font-size: 3.5vw;
+  }
+  .upstyle {
+    top: calc(7vw + 2vh);
+  }
+  .button1,
+  .inverseButton {
+    width: 7vw;
+    height: 7vw;
+  }
+  .leftimg1 {
+    width: 100vw;
+    scale: 1;
+    height: unset;
+    left: -10vw;
+  }
+  .concept2 {
+    word-spacing: 100vw;
+    padding-top: 5vw;
+  }
+  .rightimg1 {
+    width: 100vw;
+    bottom: 30vh;
+    height: unset;
+    right: -10vh;
+  }
+  .designTypo {
+    width: 100vw;
+    height: 40vw;
+  }
+  .textup {
+    font-size: 3.5vw;
+    width: 70%;
+  }
+  .gbrandTop {
+    font-size: 5vw;
+  }
+}
+
+@media all and (max-device-width: 480px) {
+  .formTitle > .center > h1 {
+    line-height: 10vw;
+    font-size: 12vw;
+  }
+  .formTitle > .center {
+    width: 70%;
+    margin: 15vh auto 0;
+  }
+  .formTitle > .center > p {
+    margin-top: 2.5vw;
+    font-size: 5vw;
+  }
+  form {
+    width: 70vw;
+    margin: 5vw auto;
+  }
+  input {
+    width: 99%;
+    font-size: 5vw;
+  }
+  button > p {
+    font-size: 5vw;
+  }
+  .sendi {
+    width: 7vw;
+    height: 7vw;
+  }
+
+  .abstractFigure {
+    background-size: 150%;
+  }
+  .box > h2 {
+    font-size: 5vw;
+  }
+  .inside > h1 {
+    font-size: 12vw;
+  }
+  .click {
+    width: 10vw;
+    height: 10vw;
+  }
+  .up {
+    display: flex;
+    justify-content: center;
+    padding: unset;
+  }
+
+  .textup {
+    font-size: 6vw;
+    width: 90vw;
+    margin-top: 15vw;
+    text-align: center;
+  }
+  .gbrandTop {
+    font-size: 6vw;
+    padding-top: 4vh;
+  }
+  .button1.work {
+    top: calc(2.5vh);
+  }
+  .main {
+    border-radius: 8vw 8vw 0 0;
+  }
+  .serviceButton > .listOpportClicked {
+    background-color: white;
+  }
+
+  .pointpart1.service {
+    width: 80%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 20vh;
+  }
+
+  .descriptionButtonDesign {
+    width: 93vw;
+    text-align: center;
+    padding: 5vw;
+    font-size: 5vw;
+  }
+
+  .pointpart1.service > .normal1 {
+    margin: 0 auto;
+    font-size: 5vw;
+  }
+  .socialMedia > a > p,
+  .downg,
+  .menup {
+    font-size: 4vw;
+  }
+  .designTypo {
+    width: 80vw;
+    height: 80vh;
+    background-size: contain;
+  }
+  .upstyle > .leftup {
+    margin-top: 0;
+  }
+  .serviceButton > div {
+    width: 6vw;
+    height: 6vw;
+    height: 15vw;
+  }
+  .upstyle {
+    top: calc(13vw + 5vh);
+  }
+  .serviceButtonClicked {
+    top: 0vw;
+  }
+
+  .leadThankYou {
+    width: 50%;
+    font-size: 8vw;
+  }
+  .makeITpng {
+    width: 100%;
+    height: 40vh;
+    background-position: center;
+    background-size: contain;
+    margin-top: 20vw;
+  }
+  .socialMedia {
+    width: 23%;
+  }
+  .downstyle > p {
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    bottom: 20vh;
+    font-size: 5vw;
+  }
+  .portfolioSection {
+    grid-template-columns: 1fr;
+  }
+  .subTitlePorfolio {
+    font-size: 12vw;
+    letter-spacing: -0.5vw;
+  }
+
+  .bentoDesign {
+    grid-row: span 1;
+  }
+  .letterMain {
+    width: 100%;
+  }
+  .pointpart1:first-of-type > img {
+    display: none;
+  }
+  .pointpart1:first-of-type {
+    display: block;
+  }
+  .pointpart1 {
+    width: 100%;
+  }
+  .pointpart1:nth-of-type(2) {
+    display: none;
+  }
+  .uppart1 {
+    display: block;
+  }
+  .button1 {
+    width: 13vw;
+    height: 13vw;
+  }
+  .small1 {
+    font-size: 3.5vw;
+  }
+  .uppart1 > .small1 {
+    padding-left: 3vh;
+  }
+  .gbrand1 {
+    font-size: 11vw;
+    margin: 10vh 26vw;
+  }
+  .firstpage1blok {
+    border: none;
+    width: 100vw;
+  }
+  .main1 {
+    font-size: 10vw;
+    letter-spacing: -1px;
+    text-align: left;
+    width: 1vw;
+    padding-top: 40vh;
+    padding-left: 3vh;
+  }
+
+  .normal1 {
+    font-size: 5vw;
+  }
+  .downpart1 {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .centerclick {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  }
+
+  h3 {
+    font-size: 7vw;
+    line-height: 18vw;
+  }
+
+  .dop2 {
+    top: 3vh;
+    width: 90vw;
+    height: 15vw;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border-radius: 3vw;
+  }
+
+  .textup2 {
+    width: auto;
+    font-size: 5.4vw;
+  }
+
+  .gletter2 {
+    display: none;
+  }
+
+  .leftimg1 {
+    width: 100vw;
+    scale: 1.3;
+    height: unset;
+    left: -10vw;
+  }
+
+  .rightimg1 {
+    width: 120vw;
+    bottom: 40vh;
+    height: unset;
+    right: -10vh;
+  }
+
+  .downpart2 {
+    width: 92%;
+    border-radius: 20px;
+  }
+  .inverseButton {
+    background-image: url('../images/menuInverseIcon.svg');
+    top: calc(4vh + 1vw);
+  }
+  .concept2 {
+    font-size: 10vw;
+    width: 60vw;
+    margin: 0 auto;
+    margin-top: 4vh;
+    text-align: center;
+    white-space: pre-line;
+    letter-spacing: -0.1vh;
+    line-height: 100%;
+    word-spacing: 100vw;
+  }
+
+  .textdown2 {
+    font-size: 3.6vw;
+    width: 50%;
+
+    margin: 0 auto;
+    margin-bottom: 6vh;
+  }
+
+  .centerdown2 {
+    top: 0vh;
+    left: 5vw;
+    right: 5vw;
+  }
+
+  .small2 {
+    font-size: 2.4vw;
+  }
+
+  .smallright2 {
+    font-size: 2.4vw;
+  }
+  h3 {
+    font-size: 5vw;
+  }
+  .firstscreen {
+    height: 60vh;
+  }
+  .centerdown {
+      bottom: 25vh;
+  }
+  .submitButton {
+    gap: 4vw;
+    border-radius: 2vw; 
+  }
+  .sendt {
+    font-size: 3vw;
+  }
+  .form {
+    margin-top: 10vw;
+  }
+}
+
+@media all and (min-device-width: 0px) and (max-device-width: 389px) {
+  .small1 {
+    font-size: 0;
+  }
+  .gbrand1 {
+    font-size: 0;
+  }
+  .firstpage1blok {
+    border: none;
+  }
+  .main1 {
+    font-size: 0;
+  }
+  .normal1 {
+    font-size: 0;
+  }
+  .image1 {
+    filter: opacity(0);
+  }
+  .centerclick {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  }
+
+  h3 {
+    font-size: 7vw;
+    line-height: 20vw;
+  }
+  .mainmenu1 {
+    border: none;
+  }
+}

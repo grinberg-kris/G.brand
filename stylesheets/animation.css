@@ -1,0 +1,42 @@
+@keyframes transparent {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scale {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 7;
+  }
+}
+
+@keyframes animationSwipe {
+  from {
+    transform: translateY(-20%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes animationSwipeX {
+  from {
+    transform: translateX(-20%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes animationSwipeXP {
+  from {
+    transform: translateX(20%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
